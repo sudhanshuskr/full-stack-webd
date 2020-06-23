@@ -45,8 +45,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-md align-self-center">
-                    <img src = "img/logo.png" class="ing-fluid">
+                <div class="col-md-3 align-self-center d-flex align-items-center ">
+                    <img src = "img/logo.png" class="img-fluid mx-auto my-3">
+                </div>
+                <div class="col-md-3 align-items-center d-flex"> 
+                    <a class="btn btn-warning px-4 mx-auto my-3" type="button" href="#reservetable">Reserve Table</a>
                 </div>
  
             </div>
@@ -59,10 +62,6 @@
             <ol class="col-12 breadcrumb">
                 <li class="breadcrumb-item active">Home</li>
             </ol>
-            <div class="col-12">
-               <h3>About Us</h3>
-               <hr>
-            </div>
         </div>
 
         <div class="row mt-5 row-content">
@@ -74,8 +73,8 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>    
+                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger mr-1 ml-1">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span> </h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>    
                     </div>
                     
                 </div>
@@ -91,12 +90,14 @@
             </div>
             <div class="col-md-8 order-sm-last">
                 <div class="media">
-                    <img src="img/buffet.png" alt="buffet" class="d-flex mr-3 align-self-center img-thumbnail">
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet</h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <h2>Weekend Grand Buffet<span class="badge badge-danger ml-1">NEW</span> </h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
-                </div>
+                    <div class="media-right">
+                        <img src="img/buffet.png" alt="buffet" class="d-flex ml-3 align-self-center img-thumbnail">
+                    </div>  
+                    </div>
                 
                 
             </div>
@@ -114,7 +115,7 @@
                     <div class="media-body">
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
                 </div>
                 
@@ -122,12 +123,69 @@
             
             
         </div>
+
+        <div class="row mt-5" id="reservetable">
+            <div class="col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form class="my-3">
+                            <div class="row form-group align-center">
+                                <label for="guest" class="col-sm-4 col-form-label">No. of Guests</label>
+                                <div class="col-sm-8 my-auto">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest-1" value="option1" checked>
+                                        <label class="form-check-label" for="guest-1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest-2" value="">
+                                        <label class="form-check-label" for="guest-2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest-3" value="">
+                                        <label class="form-check-label" for="guest-3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest-4" value="">
+                                        <label class="form-check-label" for="guest-4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest-5" value="">
+                                        <label class="form-check-label" for="guest-5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guest" id="guest-6" value="">
+                                        <label class="form-check-label" for="guest-6">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row form-group">
+                                <label for="datetime" class="col-sm-4 col-form-label">Date and Time</label>
+                                <div class="col-sm-4">
+                                    <input type="date" id="datetime" name="date" class="form-control" placeholder="Date">
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="time" id="datetime" name=time class="form-control" placeholder="Time"> 
+                                </div>
+                            </div>
+                            <div class="form-row form-group">
+                                <div class="col-sm-8 offset-sm-4">
+                                    <button type="button" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="container">
             <div class="row">             
-                <div class="col-md-3">
+                <div class="col-5 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -136,7 +194,7 @@
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-7 col-sm-4 offset-sm-3">
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
@@ -147,7 +205,7 @@
 		              <i class="fa fa-envelope-o "></i> <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div class="col-md-5">
+                <div class="col-12 col-md-3">
                     <div class="container-fluid">
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>

@@ -19,7 +19,7 @@ body {
     background-color: #512da8;
 }
 .row-content{
-    height:20vw ;
+    min-height: 20vw;
     align-items: center;
     border-bottom: 2px solid rgb(0,0,0,0.5);
 }
